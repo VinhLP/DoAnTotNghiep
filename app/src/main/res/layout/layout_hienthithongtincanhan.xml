@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_restaurant">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size310dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/size60dp"
+        android:layout_marginEnd="@dimen/size60dp"
+        android:background="@color/overlay_black">
+
+        <RelativeLayout
+            android:id="@+id/rtTenDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size110dp">
+
+            <ImageView
+                android:id="@+id/imLogoLeChef"
+                android:layout_width="@dimen/size120dp"
+                android:layout_height="@dimen/size60dp"
+                android:layout_marginTop="@dimen/size15dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_logolechef"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_below="@+id/imLogoLeChef"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tvTenDangNhap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tendangnhap"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/btnSuaThongTinCaNhan"
+                    android:layout_width="@dimen/size25dp"
+                    android:layout_height="@dimen/size25dp"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_edit_white"
+                    android:scaleType="center"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rtTenDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size50dp"
+                android:layout_marginEnd="@dimen/size50dp">
+
+                <LinearLayout
+                    android:id="@+id/lnMatKhau"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/size25dp"
+                        android:layout_height="@dimen/size25dp"
+                        android:src="@drawable/ic_imformation_matkhau"/>
+
+                    <TextView
+                        android:id="@+id/tvMatKhau"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size10dp"
+                        android:text="@string/matkhau"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="@color/overlay_black"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/lnMatKhau"
+                    android:id="@+id/lnGioiTinh"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/size25dp"
+                        android:layout_height="@dimen/size25dp"
+                        android:src="@drawable/ic_imformation_tendangnhap"/>
+
+                    <TextView
+                        android:id="@+id/tvGioiTinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size10dp"
+                        android:text="@string/gioitinh"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="@color/overlay_black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/lnGioiTinh"
+                    android:id="@+id/lnNgaySinh"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/size25dp"
+                        android:layout_height="@dimen/size25dp"
+                        android:src="@drawable/ic_information_calender"/>
+
+                    <TextView
+                        android:id="@+id/tvNgaySinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size10dp"
+                        android:text="@string/ngaysinh"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="@color/overlay_black"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/lnNgaySinh"
+                    android:id="@+id/lnCMND"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/size25dp"
+                        android:layout_height="@dimen/size25dp"
+                        android:src="@drawable/ic_information_id"/>
+
+                    <TextView
+                        android:id="@+id/tvCMND"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cmnd"
+                        android:layout_marginLeft="@dimen/size10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="@color/overlay_black"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

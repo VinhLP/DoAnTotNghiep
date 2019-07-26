@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lnLoaiThucDon"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size60dp">
+
+            <ImageView
+                android:id="@+id/imHinhLoaiThucDon"
+                android:layout_width="@dimen/size35dp"
+                android:layout_height="@dimen/size35dp"
+                android:src="@drawable/logolechef"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tvTenLoaiThucDon"
+                android:layout_width="@dimen/size150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:text="@string/tenloaithucdon"
+                android:textSize="@dimen/size13sp"
+                android:textColor="@color/darkgray"/>
+
+            <ImageView
+                android:layout_width="@dimen/size15dp"
+                android:layout_height="@dimen/size15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size50dp"
+                android:src="@drawable/ic_next"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_below="@+id/lnLoaiThucDon"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/size1dp"
+            android:layout_marginTop="@dimen/size2dp"
+            android:layout_marginBottom="@dimen/size2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/silver"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKyActivity"
+    android:background="@drawable/background_restaurant">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_black">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnQuayLaiDangNhap"
+        android:layout_width="@dimen/size35dp"
+        android:layout_height="@dimen/size35dp"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size5dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_close"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textColor="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/size45dp"
+        android:layout_marginEnd="@dimen/size45dp">
+        
+        <ImageView
+            android:id="@+id/imLogoLeChef"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size100dp"
+            android:src="@drawable/ic_logolechef"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_below="@+id/imLogoLeChef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size30dp"
+            android:layout_marginStart="@dimen/size10dp"
+            android:layout_marginEnd="@dimen/size10dp">
+
+            <RelativeLayout
+                android:id="@+id/rtTenDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTenDangNhap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tendangnhap"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:id="@+id/lnTenDangNhap"
+                    android:layout_below="@id/tvTenDangNhap"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_imformation_tendangnhap"/>
+
+                    <EditText
+                        android:id="@+id/edTenDangNhapDK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size5dp"
+                        android:layout_marginBottom="@dimen/size10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/size14sp"
+                        android:textColor="@color/DeepSkyBlue3"
+                        android:singleLine="true"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rtMatKhau"
+                android:layout_below="@id/rtTenDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvMatKhau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matkhau"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/lnMatKhau"
+                    android:layout_below="@+id/tvMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_imformation_matkhau"/>
+
+                    <EditText
+                        android:layout_below="@+id/edTenDangNhapDK"
+                        android:id="@+id/edMatKhauDK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size5dp"
+                        android:layout_marginBottom="@dimen/size10dp"
+                        android:textColor="@color/DeepSkyBlue3"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="@dimen/size14sp"
+                        android:singleLine="true"
+                        android:password="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rtGioTinh"
+                android:layout_below="@+id/rtMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvGioiTinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gioitinh"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvChucVuNhanVien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size140dp"
+                    android:text="@string/chucvu"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/lnGioiTinh"
+                    android:layout_below="@+id/tvGioiTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size10dp">
+
+                    <RadioGroup
+                        android:layout_below="@+id/edMatKhauDK"
+                        android:id="@+id/rgGioiTinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdNam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radionam"
+                            android:textColor="@color/DeepSkyBlue3"
+                            android:textSize="@dimen/size14sp"
+
+                            android:fontFamily="sans-serif-medium"/>
+
+                        <RadioButton
+                            android:id="@+id/rdNu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radionu"
+                            android:textColor="@color/DeepSkyBlue3"
+                            android:textSize="@dimen/size14sp"
+                            android:fontFamily="sans-serif-medium"/>
+                    </RadioGroup>
+
+                    <Spinner
+                        android:id="@+id/spinQuyenNV"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size30dp"
+                        android:layout_marginLeft="@dimen/size30dp"></Spinner>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rtNgaySinh"
+                android:layout_below="@+id/rtGioTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvNgaySinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ngaysinh"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/lnNgaySinh"
+                    android:layout_below="@+id/tvNgaySinh"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_information_calender"/>
+
+                    <EditText
+                        android:layout_below="@+id/lnGioiTinh"
+                        android:id="@+id/edNgaySinh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size5dp"
+                        android:layout_marginBottom="@dimen/size10dp"
+                        android:textSize="@dimen/size14sp"
+                        android:textColor="@color/DeepSkyBlue3"
+                        android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rtCMND"
+                android:layout_below="@id/rtNgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCMND"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cmnd"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lnCMND"
+                    android:layout_below="@+id/tvCMND"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_information_id" />
+
+                    <EditText
+                        android:id="@+id/edCMND"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size5dp"
+                        android:textSize="@dimen/size14sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/DeepSkyBlue3"
+                        android:singleLine="true"
+                        android:maxLength="9"
+                        android:numeric="integer"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/relative"
+            android:id="@+id/btnDangKyDK"
+            android:layout_width="@dimen/size220dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size30dp"
+            android:layout_marginBottom="@dimen/size20dp"
+            android:background="@drawable/gradient_background_deepskyblue"
+            android:text="@string/dangky"
+            android:textColor="@color/white"/>
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size100dp"
+        android:layout_height="@dimen/size4dp"
+        android:layout_marginTop="@dimen/size40dp"
+        android:background="@color/DeepSkyBlue4"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5dp"/>
+
+</RelativeLayout>

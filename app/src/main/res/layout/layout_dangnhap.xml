@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_restaurant">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_black">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size45dp"
+        android:layout_marginEnd="@dimen/size45dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imLogoLeChef"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size100dp"
+            android:layout_marginBottom="@dimen/size60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logolechef"/>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_below="@id/imLogoLeChef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/size10dp"
+            android:layout_marginEnd="@dimen/size10dp">
+
+            <TextView
+                android:id="@+id/tvTenDangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size50dp"
+                android:text="@string/tendangnhap"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size11sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/lnTenDangNhap"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tvTenDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_imformation_tendangnhap"/>
+
+                <EditText
+                    android:id="@+id/edTenDangNhapDN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size5dp"
+                    android:layout_marginBottom="@dimen/size5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size13sp"
+                    android:textColor="@color/DeepSkyBlue1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvMatKhau"
+                android:layout_below="@id/lnTenDangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matkhau"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textSize="@dimen/size11sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/lnMatKhau"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tvMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_imformation_matkhau"/>
+
+                <EditText
+                    android:id="@+id/edMatKhauDN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:layout_marginStart="@dimen/size5dp"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size13sp"
+                    android:textColor="@color/DeepSkyBlue1"/>
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_below="@id/relative"
+            android:id="@+id/btnDangNhapDN"
+            android:layout_width="@dimen/size220dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size25dp"
+            android:background="@drawable/gradient_background_deepskyblue"
+            android:text="@string/dangnhap"
+            android:textSize="@dimen/size12sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDangKyDN"
+            android:layout_below="@id/btnDangNhapDN"
+            android:layout_width="@dimen/size220dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_marginTop="@dimen/size25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/line_deepskyblue"
+            android:text="@string/dangky"
+            android:textSize="@dimen/size12sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/DeepSkyBlue3"/>
+
+        <LinearLayout
+            android:id="@+id/lnQuenMatKhau"
+            android:orientation="horizontal"
+            android:layout_below="@id/btnDangKyDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size15dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_below="@+id/btnDangKyDN"
+                android:id="@+id/tvQuenMatKhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/size10dp"
+                android:text="@string/quenmatkhau"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/DeepSkyBlue1"
+                android:textSize="@dimen/size13sp"/>
+
+            <ImageView
+                android:layout_width="@dimen/size15dp"
+                android:layout_height="@dimen/size15dp"
+                android:src="@drawable/questionmark"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linearDangNhapVoi"-->
+            <!--android:layout_below="@id/lnQuenMatKhau"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/size20dp"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<View-->
+                <!--android:layout_width="@dimen/size50dp"-->
+                <!--android:layout_height="@dimen/size1dp"-->
+                <!--android:background="@color/gray"-->
+                <!--android:layout_gravity="center_vertical"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/size20dp"-->
+                <!--android:layout_marginRight="@dimen/size20dp"-->
+                <!--android:text="@string/dangnhapvoi"-->
+                <!--android:textColor="@color/blue2"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="@dimen/size50dp"-->
+                <!--android:layout_height="@dimen/size1dp"-->
+                <!--android:background="@color/gray"-->
+                <!--android:layout_gravity="center_vertical"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_below="@+id/linearDangNhapVoi"-->
+            <!--android:id="@+id/linearImDangNhapVoi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/size10dp"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<ImageView-->
+                <!--android:background="@color/transparent"-->
+                <!--android:layout_width="@dimen/size35dp"-->
+                <!--android:layout_height="@dimen/size35dp"-->
+                <!--android:src="@drawable/ic_dangnhap_facebook"-->
+                <!--android:layout_marginRight="@dimen/size15dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:background="@color/transparent"-->
+                <!--android:layout_width="@dimen/size35dp"-->
+                <!--android:layout_height="@dimen/size35dp"-->
+                <!--android:src="@drawable/ic_dangnhap_gmail"/>-->
+            <!---->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/size100dp"
+        android:layout_height="@dimen/size4dp"
+        android:layout_marginTop="@dimen/size40dp"
+        android:background="@color/DeepSkyBlue4"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size5dp"/>
+
+</RelativeLayout>

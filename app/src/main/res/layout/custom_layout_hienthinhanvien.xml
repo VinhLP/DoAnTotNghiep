@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/size50dp">
+
+    <ImageView
+        android:id="@+id/imHinhNhanVien"
+        android:layout_width="@dimen/size40dp"
+        android:layout_height="@dimen/size40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_item_themnhanvien"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size15dp">
+
+        <TextView
+            android:id="@+id/tvTenNhanVien"
+            android:layout_width="@dimen/size150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size5dp"
+            android:text="@string/tendangnhap"
+            android:textSize="@dimen/size13sp"
+            android:textColor="@color/darkgray"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@+id/tvTenNhanVien"
+            android:id="@+id/tvCMND"
+            android:layout_width="@dimen/size150dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size13sp"
+            android:textColor="@color/darkgray"
+            android:text="@string/cmnd"
+            android:fontFamily="sans-serif-medium"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/size15dp"
+        android:layout_height="@dimen/size15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size35dp"
+        android:src="@drawable/ic_next"/>
+</LinearLayout>

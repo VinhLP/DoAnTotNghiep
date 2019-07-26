@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="mo">Mở</string>
+    <string name="dong">Đóng</string>
+
+    <!-- Thông báo -->
+    <string name="dangkythanhcong">Đăng ký thành công!</string>
+    <string name="dangkythatbai">Thất bại!</string>
+    <string name="dangnhapthanhcong">Đăng nhập thành công!</string>
+    <string name="dangnhapthatbai">Tên đăng nhập hoặc Mật khẩu không đúng!</string>
+    <string name="loi">Lỗi!</string>
+    <string name="xayraloi">Xảy ra lỗi!</string>
+
+    <string name="batloitendangnhap">Vui lòng nhập tên đăng nhập!</string>
+    <string name="batloimatkhau">Vui lòng nhập mật khẩu!</string>
+
+    <string name="vuilongdienthongtin">Vui lòng điền đầy đủ thông tin!</string>
+
+    <!-- logo -->
+    <string name="lechefrestaurant">LeChef Restaurant</string>
+
+    <!-- Button -->
+    <string name="dangnhap">Đăng Nhập</string>
+    <string name="dangky">Đăng Ký</string>
+    <string name="quenmatkhau">Quên mật khẩu</string>
+
+    <!-- Thông tin nhân viên -->
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="radionam">Nam</string>
+    <string name="radionu">Nữ</string>
+    <string name="ngaysinh">Ngày sinh</string>
+    <string name="cmnd">Chứng minh nhân dân</string>
+    <string name="gioitinh">Giới tính</string>
+
+    <string name="tennhanvien">Tên nhân viên</string>
+    <string name="chucvu">Chức vụ:</string>
+    <string name="chucvunhanvien">Chức vụ nhân viên</string>
+    <string name="quanly">Quản lý</string>
+
+
+    <!-- Trang đăng nhập -->
+    <string name="logodangnhap">ĐĂNG NHẬP</string>
+    <string name="dangnhapvoi">Đăng nhập với</string>
+    <string name="nhomatkhau">Nhớ mật khẩu</string>
+    <string name="banchuacotaikhoan">Bạn chưa có tài khoản?</string>
+
+    <!-- Trang đăng ký -->
+    <string name="tieudedangky">ĐĂNG KÝ</string>
+    <string name="capnhatnhanvien">CẬP NHẬT NHÂN VIÊN</string>
+    <string name="quaylaidangnhap">Quay lại</string>
+
+    <!-- Trang bàn ăn -->
+    <string name="popupThembanan">Thêm bàn ăn</string>
+    <string name="itthembanan">Thêm bàn ăn</string>
+    <string name="tenbanan">TÊN BÀN ĂN</string>
+    <string name="dongythembanan">ĐỒNG Ý</string>
+    <string name="themthanhcong">Thêm thành công!</string>
+    <string name="themthatbai">Thêm thất bại!</string>
+    <string name="goimon">GỌI MÓN</string>
+    <string name="vuilongnhaptenban">Vui lòng nhập tên bàn!</string>
+
+    <!-- Trang danh sách bàn ăn -->
+
+
+    <!-- Trang thực đơn -->
+    <string name="tvthemthucdon">THÊM THỰC ĐƠN</string>
+    <string name="tenmonan">Tên món ăn</string>
+    <string name="giatien">Giá tiền</string>
+    <string name="gia"></string>
+    <string name="themloaithucdon">Thêm loại thực đơn</string>
+    <string name="dongythemthucdon">ĐỒNG Ý</string>
+    <string name="itthemthucdon">Thêm thực đơn</string>
+    <string name="popupThemthucdon">Thêm thực đơn</string>
+    <string name="loaithucdon">Nhập loại thực đơn</string>
+    <string name="dongythemloaithucdon">ĐỒNG Ý</string>
+    <string name="vuilongnhaptenloaithudon">Vui lòng nhập loại thực đơn!</string>
+    <string name="chonloaithucdon">Chọn loại thực đơn</string>
+    <string name="batloithemthucdon">Vui lòng điền đủ thông tin!</string>
+    <string name="danhsachloaithucdon">Danh Sách Loại Thực Đơn</string>
+    <string name="tvminiute">5 - 10 mins</string>
+    <string name="tenloaithucdon">TÊN LOẠI THỰC ĐƠN</string>
+    <string name="nhahangphap">Nhà Hàng Pháp Lechef</string>
+    <string name="soluong">Số lượng</string>
+    <string name="vuilongnhaptenloaithucdon">Vui lòng nhập tên loại!</string>
+
+    <!-- Trang nhân viên -->
+    <string name="itthemnhanvien">Thêm nhân viên</string>
+    <string name="danhsachnhanvien">Danh Sách Nhân Viên</string>
+
+    <!-- Trang Giỏ Hàng -->
+    <string name="giohang">Giỏ hàng</string>
+    <string name="danhsachmonan">Danh Sách Món Ăn</string>
+    <string name="thanhtoan">Thanh Toán</string>
+
+    <!-- Trang Thanh Toan -->
+    <string name="chitiethoadon">Chi Tiết Hóa Đơn</string>
+    <string name="thanhtien"></string>
+    <string name="vnd">Đ</string>
+    <string name="tenmonanhd">Tên món ăn</string>
+    <string name="soluongmonanhd">Số lượng</string>
+    <string name="soluongmonangiohang">Sl :</string>
+    <string name="thanhtienmonanhd">Thành tiền</string>
+    <string name="thanhthoanthanhcong">Thanh toán thành công!</string>
+    <string name="thanhtoanthatbai">Thanh toán thất bại!</string>
+
+    <!-- Trang Thanh Toan -->
+    <string name="danhsachhoadon">Danh Sách Hóa Đơn</string>
+    <string name="ngaythanhtoan">Ngày thanh toán</string>
+    <string name="banan">Bàn ăn</string>
+    <string name="nhanvienthanhtoan">Nhân viên</string>
+    <string name="tongtienhoadon">Tổng tiền</string>
+    <string name="dongia">Đơn giá</string>
+
+    <!-- Trang Thong Ke -->
+    <string name="ngaytt">Ngày TT</string>
+    <string name="tenban">Tên Bàn</string>
+    <string name="nhanvientt">Nhân viên TT</string>
+    <string name="tonghd">Tổng HĐ</string>
+    <string name="ban">Bàn</string>
+    <string name="mahoadon">Mã hóa đơn</string>
+
+    <!-- Trang Chi Tiet Hoa Don -->
+    <string name="tongsoluong">Số lượng</string>
+
+
+
+    <!-- Menu Navigation -->
+    <string name="trangchu">Trang chủ</string>
+    <string name="thucdon">Thực đơn</string>
+    <string name="nhanvien">Nhân viên</string>
+    <string name="thongke">Thống kê</string>
+    <string name="caidat">Cài đặt</string>
+    <string name="dangxuat">Đăng xuất</string>
+
+
+    <!-- Context menu -->
+    <string name="sua">Sửa</string>
+    <string name="xoa">Xóa</string>
+
+    <string name="xoathanhcong">Xóa thành công!</string>
+    <string name="xoathatbai">Xóa thất bại!</string>
+
+    <string name="suathanhcong">Sửa thành công!</string>
+    <string name="suathatbai">Sửa thất bại!</string>
+
+</resources>

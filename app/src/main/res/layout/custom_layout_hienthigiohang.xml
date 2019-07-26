@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="@dimen/size70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/size60dp"
+        android:layout_height="@dimen/size60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hinhmonan"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size15dp"
+        android:layout_marginTop="@dimen/size15dp">
+
+        <TextView
+            android:id="@+id/tvTenMonAnGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/darkdarkgray"
+            android:text="@string/tenmonanhd"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvTenMonAnGioHang"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/size20dp"
+                android:layout_height="@dimen/size20dp"
+                android:src="@drawable/ic_money"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_below="@+id/tvTenMonAnGioHang"
+                android:id="@+id/tvGiaTienMonAnGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/giatien"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size165dp"
+            android:layout_marginTop="@dimen/size25dp">
+
+            <ImageView
+                android:id="@+id/imSoLuong"
+                android:background="@color/darkgray"
+                android:layout_width="@dimen/size15dp"
+                android:layout_height="@dimen/size15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_menu_menu"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_below="@+id/imSoLuong"
+                android:id="@+id/tvSoLuongGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/size8dp"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

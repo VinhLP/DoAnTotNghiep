@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/size65dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="@dimen/size80dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/overlay_darkgray">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvTieuDeNgayTTHD"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/size5dp"-->
+                    <!--android:textSize="@dimen/size12sp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textColor="@color/overlay_white"-->
+                    <!--android:text="@string/ngaytt"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvNgayTTHD"-->
+                    <!--android:layout_below="@+id/tvTieuDeNgayTTHD"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/size10dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:textColor="@color/overlay_white"-->
+                    <!--android:text=""/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTieuDeTenBanTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size5dp"-->
+                        <!--android:textSize="@dimen/size12sp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text="@string/tenban"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_below="@+id/tvTieuDeTenBanTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size10dp"-->
+                        <!--android:layout_centerHorizontal="true">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/tvTenBanTTHD"-->
+                            <!--android:layout_below="@+id/tvTieuDeTenBanTTHD"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="@dimen/size8dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:text=""/>-->
+                    <!--</LinearLayout>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTieuDeNhanVienTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size5dp"-->
+                        <!--android:textSize="@dimen/size12sp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text="@string/nhanvientt"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTenNhanVienTTHD"-->
+                        <!--android:layout_below="@+id/tvTieuDeNhanVienTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size10dp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text=""/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTieuDeTongTienTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size5dp"-->
+                        <!--android:textSize="@dimen/size12sp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text="@string/tonghd"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvTongTienTTHD"-->
+                        <!--android:layout_below="@+id/tvTieuDeTongTienTTHD"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="@dimen/size10dp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:text=""/>-->
+
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size55dp"
+        android:layout_marginBottom="@dimen/size5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/size70dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNgayTTHD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ngaythanhtoan"
+                    android:textSize="@dimen/size11sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvMaHoaDon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:text="@string/mahoadon"
+                    android:textSize="@dimen/size11sp"/>
+
+                <TextView
+                    android:id="@+id/tvTenBanTTHD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/size11sp"
+                    android:text="@string/banan"/>
+
+                <TextView
+                    android:id="@+id/tvTenNhanVienTTHD"
+                    android:layout_below="@+id/tvTieuDeNhanVienTTHD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/size11sp"
+                    android:text="@string/nhanvientt"/>
+
+                <TextView
+                    android:id="@+id/tvTongTienTTHD"
+                    android:layout_below="@+id/tvTieuDeTongTienTTHD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/size11sp"
+                    android:text="@string/tongtienhoadon"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

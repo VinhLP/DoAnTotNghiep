@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size120dp"
+    android:background="@drawable/bg_navigation">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imHinhNhanVien"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:src="@drawable/ic_item_themnhanvien">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tvTenNhanVien_Navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imHinhNhanVien"
+            android:layout_marginTop="@dimen/size10dp"
+            android:text="@string/tendangnhap"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_below="@+id/tvTenNhanVien_Navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chucvu"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size13sp"/>
+
+            <TextView
+                android:id="@+id/tvChucVuNhanVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:text="@string/chucvunhanvien"
+                android:textColor="@color/gray"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="italic"
+                android:textSize="@dimen/size13sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

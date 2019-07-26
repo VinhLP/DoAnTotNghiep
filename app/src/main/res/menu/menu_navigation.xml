@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_navigation"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itTrangChu"
+            android:title="@string/trangchu"
+            android:icon="@drawable/ic_menu_home"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/itThucDon"
+            android:title="@string/thucdon"
+            android:icon="@drawable/ic_menu_menu"
+            />
+
+        <item
+            android:id="@+id/itNhanVien"
+            android:title="@string/nhanvien"
+            android:icon="@drawable/ic_menu_employee"
+            />
+
+        <item
+            android:id="@+id/itThongKe"
+            android:title="@string/thongke"
+            android:icon="@drawable/ic_menu_statistical"
+            />
+
+        <item
+            android:id="@+id/itCaiDat"
+            android:title="@string/caidat"
+            android:icon="@drawable/ic_menu_setting"
+            />
+
+        <item
+            android:id="@+id/itDangXuat"
+            android:title="@string/dangxuat"
+            android:icon="@drawable/ic_menu_exit"
+            />
+
+    </group>
+</menu>

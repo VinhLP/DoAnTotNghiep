@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/size5dp"
+    android:layout_marginEnd="@dimen/size5dp">
+
+    <RelativeLayout
+        android:id="@+id/rt_themthucdon_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnThoatThemThucDon"
+            android:layout_width="@dimen/size40dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:background="@color/transparent"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rt_themthucdon_back"
+        android:id="@+id/rt_themthucdon_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_themthucdon_LogoLeChef"
+            android:layout_width="@dimen/size90dp"
+            android:layout_height="@dimen/size90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logolechef"/>
+
+        <TextView
+            android:layout_below="@+id/im_themthucdon_LogoLeChef"
+            android:id="@+id/tvThemThucDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size15dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/size18sp"
+            android:text="@string/tvthemthucdon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rt_themthucdon_logo"
+        android:id="@+id/rt_themthucdon_ttthuctin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edThemTenMonAn"
+            android:layout_width="@dimen/size300dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_marginTop="@dimen/size60dp"
+            android:background="@drawable/line_gray"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/tenmonan"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/darkgray"
+            android:textAlignment="center"
+            android:textSize="@dimen/size14sp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_below="@+id/edThemTenMonAn"
+            android:id="@+id/edThemGiaTien"
+            android:layout_width="@dimen/size300dp"
+            android:layout_height="@dimen/size35dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="@drawable/line_gray"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/giatien"
+            android:textColor="@color/darkgray"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textSize="@dimen/size14sp"
+            android:singleLine="true"
+            android:numeric="integer"/>
+
+        <LinearLayout
+            android:layout_below="@+id/edThemGiaTien"
+            android:id="@+id/ln_ThemLoaiThucDon"
+            android:layout_width="@dimen/size320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="@dimen/size200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvChonLoaiThucDon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5dp"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:text="@string/chonloaithucdon"
+                    android:textColor="@color/darkgray"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    />
+
+                <Spinner
+                    android:layout_below="@+id/tvChonLoaiThucDon"
+                    android:id="@+id/spinloaithucdon"
+                    android:layout_width="@dimen/size180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size15dp">
+
+                </Spinner>
+
+                <Button
+                    android:layout_below="@+id/spinloaithucdon"
+                    android:id="@+id/btnThemLoaiThucDon"
+                    android:layout_width="@dimen/size120dp"
+                    android:layout_height="@dimen/size25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:background="@drawable/line_gray"
+                    android:text="@string/themloaithucdon"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/size10sp"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imHinhThucDon"
+                android:layout_width="@dimen/size90dp"
+                android:layout_height="@dimen/size90dp"
+                android:background="@drawable/logolechef"
+                android:layout_marginLeft="@dimen/size15dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@+id/ln_ThemLoaiThucDon"
+            android:id="@+id/btnDongYThemThucDon"
+            android:layout_width="@dimen/size200dp"
+            android:layout_height="@dimen/size40dp"
+            android:layout_marginTop="@dimen/size60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gradient_button_blue"
+            android:text="@string/dongythemthucdon"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="@dimen/size14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
